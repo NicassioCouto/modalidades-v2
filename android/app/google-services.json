@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "75989479029",
+    "project_id": "modalidades-88cf1",
+    "storage_bucket": "modalidades-88cf1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75989479029:android:2f1f2b8780967a9d8a523c",
+        "android_client_info": {
+          "package_name": "com.example.modalidades"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsZXDuj5bp75KPDLy1_LW3o-1PhCPw3Ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
