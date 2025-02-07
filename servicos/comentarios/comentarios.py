@@ -20,7 +20,7 @@ def get_conexao_com_bd():
 def get_info():
     return jsonify(
         descricao="gerenciamento de comentarios",
-        versao="1.0"
+        versao=" 1.0 "
     )
 
 

@@ -132,6 +132,6 @@ INSERT INTO `likes` (id, feed, email) VALUES
 (4,2,'exemplo@email.com'),
 (5,3,'exemplo@email.com'),
 (6,3,'exemplo@email.com'),
-(7,4,'exemplo@email.com');
+(7,4,'exemplos@email.com');
 
 UNLOCK TABLES;

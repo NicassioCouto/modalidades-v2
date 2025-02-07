@@ -34,7 +34,7 @@ def get_quantidade_de_curtidas(id_do_feed):
 def get_info():
     return jsonify(
         descricao="gerenciamento de produtos dos modalidades",
-        versao="1.0"
+        versao="1.0 "
     )
 
 

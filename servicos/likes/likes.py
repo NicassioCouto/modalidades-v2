@@ -20,7 +20,7 @@ def get_conexao_com_bd():
 def get_info():
     return jsonify(
         descricao="gerenciamento de curtidas dos modalidades",
-        versao="1.0"
+        versao=" 1.0"
     )
 
 
