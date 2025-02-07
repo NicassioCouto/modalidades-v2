@@ -58,7 +58,6 @@ class _TelaState extends State<Tela> {
       tela = const Detalhes();
     }
 
-    
     return tela;
   }
 }
