@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_getters_setters
+// ignore_for_file: unnecessary_getters_setters .
 import 'package:flutter/material.dart';
 
 import 'autenticador.dart';
