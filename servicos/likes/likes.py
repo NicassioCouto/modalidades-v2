@@ -46,7 +46,7 @@ def curtiu(conta, id_do_feed):
     cursor.execute("SELECT count(*) as quantidade " +
                    "FROM likes " +
                    "WHERE likes.feed = " +
-                   str(id_do_feed) + " AND likes.email = '" + conta + "'"
+                   str(id_do_feed) + " AND likes.conta = '" + conta + "'"
                    )
     likes = cursor.fetchone()
 
@@ -63,11 +63,11 @@ def curtir(conta, id_do_feed):
     cursor = conexao.cursor()
     try:
         cursor.execute(
-            f"INSERT INTO likes(feed, email) VALUES ({str(id_do_feed)}, '{conta}')")
+            f"INSERT INTO likes(feed, conta) VALUES ({str(id_do_feed)}, '{conta}')")
         conexao.commit()
     except:
         conexao.rollback()
-        resultado = jsonify(situacao="erro", erro="erro curtindo o produto")
+        resultado = jsonify(situacao="erro", erro="erro curtindo o produto!")
 
     conexao.close()
 
@@ -82,11 +82,11 @@ def descurtir(conta, id_do_feed):
     cursor = conexao.cursor()
     try:
         cursor.execute(
-            f"DELETE FROM likes WHERE feed = {str(id_do_feed)} AND email = '{conta}'")
+            f"DELETE FROM likes WHERE feed = {str(id_do_feed)} AND conta = '{conta}'")
         conexao.commit()
     except:
         conexao.rollback()
-        resultado = jsonify(situacao="erro", erro="erro descurtindo o produto")
+        resultado = jsonify(situacao="erro", erro="erro descurtindo o produto!")
 
     conexao.close()
 

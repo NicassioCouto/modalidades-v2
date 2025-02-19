@@ -117,7 +117,7 @@ CREATE TABLE `likes` (
   `feed` int NOT NULL,
   `nome` varchar(255) DEFAULT NULL,
   `conta` varchar(255) NOT NULL,
-  `data` datetime NOT NULL,
+  `data` datetime NOT NULL DEFAULT NOW(),
   PRIMARY KEY (`id`),
   KEY `fk_likes_feed_idx` (`feed`),
   CONSTRAINT `fk_likes_feeds` FOREIGN KEY (`feed`) REFERENCES `feeds` (`id`)
@@ -125,7 +125,7 @@ CREATE TABLE `likes` (
 
 LOCK TABLES `likes` WRITE;
 
-INSERT INTO `likes` (id, feed, email) VALUES
+INSERT INTO `likes` (id, feed, conta) VALUES
 (1,1,'exemplo@email.com'),
 (2,1,'exemplo@email.com'),
 (3,2,'exemplo@email.com'),
